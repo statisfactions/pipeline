@@ -1,0 +1,12 @@
+Package: pipeline
+Type: Package
+Title: Set Up Data Pipeline Organization
+Version: 0.1.0
+Author: Ethan Brown
+Maintainer: Ethan Brown <brow3821@umn.edu>
+Description: Creates a folder structure and process for
+    data analysis projects & automated reports
+Imports: pacman, stringr
+License: BSD
+Encoding: UTF-8
+LazyData: true
