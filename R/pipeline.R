@@ -13,7 +13,7 @@ pipeline = function(path = ".") {
 
   ## move template files up into current directory
   files = dir("template_files/", recursive = TRUE, full.names = TRUE)
-  new_files = str_replace(files, "^template_files/+", "")
+  new_files = stringr::str_replace(files, "^template_files/+", "")
 
   mapply(file.rename.mkdir, files, new_files)
 
