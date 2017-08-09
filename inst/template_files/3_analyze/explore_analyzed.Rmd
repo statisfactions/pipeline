@@ -1,0 +1,17 @@
+---
+title: "Explore analyzed data"
+output:
+  html_notebook:
+  html_document:
+    keep_md: true
+  word_document:
+    keep_md: true
+---
+
+```{r setup}
+source("analyze_functions.R")
+source("../0_general_functions.R")
+
+load("analyzed.Rdata")
+
+```

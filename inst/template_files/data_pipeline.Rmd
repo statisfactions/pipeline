@@ -20,6 +20,16 @@ session_to_file("1_gather/gather_session_info.txt")
 
 ```
 
+## Explore Gathered Data
+Render the exploratory notebook, including generating an `md` file that can be used for version control purposes.
+```{r explore_gathered}
+
+render("1_gather/explore_gathered.Rmd",
+       output_format = c("html_notebook", "word_document"))
+
+```
+
+
 # Transform
 This is where you alter your data to prepare for analysis.
 ```{r transform}
@@ -32,6 +42,14 @@ save({TRANSFORM_OBJECTS}, file = "2_transform/transformed.Rdata")
 
 # save session info
 session_to_file("2_transform/transform_session_info.txt")
+
+```
+
+## Explore Transformed Data
+```{r explore_transformed}
+
+render("2_transform/explore_transformed.Rmd",
+       output_format = c("html_notebook", "word_document"))
 
 ```
 
@@ -48,6 +66,14 @@ save({ANALYZE_OBJECTS}, file = "3_analyze/analyzed.Rdata")
 
 # save session info
 session_to_file("3_analyze/analyze_session_info.txt")
+
+```
+
+## Explore Analyzed Data
+```{r explore_analyzed}
+
+render("3_analyze/explore_analyzed.Rmd",
+       output_format = c("html_notebook", "word_document"))
 
 ```
 

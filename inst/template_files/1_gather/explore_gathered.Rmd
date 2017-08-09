@@ -1,0 +1,17 @@
+---
+title: "Explore gathered data"
+output: 
+  html_notebook:
+  html_document:
+    keep_md: true
+  word_document:
+    keep_md: true
+---
+
+```{r setup}
+source("gather_functions.R")
+source("../0_general_functions.R")
+
+load("gathered.Rdata")
+
+```
